@@ -11,16 +11,19 @@
       , "url": "git@github.com:logicalparadox/readdir-stream.git"
     }
   , "engines": {
-      "node": "*"
+      "node": ">= 0.8.x"
     }
   , "main": "./index"
   , "scripts": {
-      "test": "mocha"
+      "test": "make test"
     }
   , "dependencies": {
+        "readable-stream": "1.1.x"
+      , "sherlock": "*"
     }
   , "devDependencies": {
         "chai": "*"
+      , "chai-spies": "*"
       , "mocha": "*"
     }
 }
