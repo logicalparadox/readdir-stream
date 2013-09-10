@@ -1,3 +1,4 @@
+var fs = require('fs');
 var join = require('path').join;
 var DIR = join(__dirname, 'fixtures');
 
@@ -10,7 +11,7 @@ describe('readdir', function() {
       var entry = this.read();
       if (!entry) return;
       entry.should.have.property('path').a('string');
-      entry.should.have.property('stat');
+      entry.should.have.property('stat').an.instanceof(fs.Stats);
       if (entry.stat.isDirectory()) dirs++;
       if (entry.stat.isFile()) files++;
     });
