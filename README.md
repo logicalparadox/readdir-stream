@@ -1,4 +1,4 @@
-# readdir-stream
+# readdir-stream [![Build Status](https://travis-ci.org/logicalparadox/readdir-stream.png?branch=master)](https://travis-ci.org/logicalparadox/readdir-stream)
 
 > Recursively read a directory and stream stats objects.
 
