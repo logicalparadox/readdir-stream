@@ -24,6 +24,23 @@ readdir(dir).on('readable', function() {
 });
 ```
 
+#### API
+
+##### readdir(dir, [options])
+
+Returns Stream of directory entries with `path` and `stat` properties.
+
+###### dir
+*Required*  
+Type: `string`  
+Path to directory, that will be readed.
+
+###### options.recursive
+Type: `Boolean`  
+Default: `true`  
+
+Indicates, that readdir should be recursive.
+
 #### License
 
 (The MIT License)
